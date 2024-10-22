@@ -33,7 +33,7 @@ const CourseList: FC<CourseListProps> = ({ navigation, courses }) => {
         showsVerticalScrollIndicator={false}
         data={courses}
         keyExtractor={(_i, index) => index.toString()}
-        renderItem={({ item }) => <CourseItem course={item} onPress={() => handleShowDetail(item)} />}
+        renderItem={({ item }) => <CourseItem course={item} onPress={handleShowDetail} />}
       />
     </View>
   )
