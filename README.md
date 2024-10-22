@@ -12,5 +12,5 @@ Une application éducative pour lister des cours.
 ## Tester l'application
 
 1. Téléchargez l'application Expo Go depuis le Play Store ou l'App Store.
-2. Une fois installée, scannez le QR code ci-dessous avec Expo Go :
+2. Une fois installée, scannez le QR code ci-après avec Expo Go :
    ![QR Code](https://github.com/user-attachments/assets/5801ae97-3b81-4ebd-ab04-fef91e9de92a)
