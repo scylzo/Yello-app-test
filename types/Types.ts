@@ -16,15 +16,20 @@ export enum PAGES {
     Main = "Main",
     Home = "Home",
     Detail = "Detail"
-
 }
+
 
 /**********************Data types************************************** */
 
 export type Course = {
     title: string,
     description: string,
-    level: string
+    level: LEVELS
+}
 
+export enum LEVELS {
+    DEBUTANT = "Debutant",
+    INTERMEDIARE = "Intermediaire",
+    AVANCE = "Avance"
 }
 
