@@ -25,10 +25,7 @@ const CourseList: FC<CourseListProps> = ({ navigation, courses }) => {
   return (
     <View style={styles.container}>
       <FlatList
-        contentContainerStyle={
-          {
-            paddingHorizontal: 20,
-          }
+        contentContainerStyle={styles.list
         }
         showsVerticalScrollIndicator={false}
         data={courses}
@@ -45,5 +42,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1
   },
+  list: {
+    paddingHorizontal: 20
+  }
 
 })
