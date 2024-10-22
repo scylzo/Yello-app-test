@@ -7,15 +7,16 @@ import AntDesign from '@expo/vector-icons/AntDesign';
 
 interface CourseItemProps {
     course: Course,
-    onPress: () => void
+    onPress: (course: Course) => void
 }
 
 const CourseItem: FC<CourseItemProps> = ({ course, onPress }) => {
 
     const { getCourseEmoji } = useCourseEmoji();
+    const handlePress = () => onPress(course)
 
     return (
-        <TouchableOpacity style={styles.courseItem} onPress={onPress}>
+        <TouchableOpacity style={styles.courseItem} onPress={handlePress}>
             <Text style={styles.title}>{getCourseEmoji(course.title)} {course.title}</Text>
             <Text style={styles.description} numberOfLines={1}>{course.description}</Text>
             <Text style={styles.level}>Niveau : {course.level}</Text>
